@@ -12,5 +12,5 @@ image with only `build-essential` and `curl` installed.
 
 ```
 docker build -t gnugo:3.8 ./gnugo-3.8
-docker run -ti gnugo:3.8
+docker run -ti --rm gnugo:3.8
 ```
