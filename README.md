@@ -11,6 +11,6 @@ image with only `build-essential` and `curl` installed.
 # To play
 
 ```
-docker build -t gnugo:3.8 ./gnugo-3.8
-docker run -ti --rm gnugo:3.8
+docker build -t gnu-go:3.8 - < gnu-go/3-8.dockerfile
+docker run -ti --rm gnu-go:3.8
 ```
