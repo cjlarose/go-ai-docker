@@ -1,5 +1,5 @@
 # Download source from http://pachi.or.cz/
-# License: GNU GENERAL PUBLIC LICENSE
+# License: GNU GENERAL PUBLIC LICENSE v2
 FROM    cjlarose/baduk.io-base
 
 RUN     cd /usr/local/src &&\
