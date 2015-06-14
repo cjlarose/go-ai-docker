@@ -1,5 +1,5 @@
-# Download source from http://repo.or.cz/w/pachi.git/snapshot/pachi-10.00-satsugen.tar.gz
-# License: Unknown
+# Download source from http://pachi.or.cz/
+# License: GPL
 FROM    cjlarose/baduk.io-base
 
 RUN     cd /usr/local/src &&\
