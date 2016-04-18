@@ -1,13 +1,17 @@
 # Download source from http://sourceforge.net/projects/fuego/
 # License: GNU Lesser General Public License version 3.0
-FROM    cjlarose/baduk.io-base
+FROM    debian:wheezy
 
-RUN     apt-get install -y gawk \
+RUN     apt-get update && apt-get install -y \
+          curl \
+          g++ \
+          gawk \
           libboost-dev \
-          libboost-thread-dev \
           libboost-filesystem-dev \
           libboost-program-options-dev \
-          libboost-test-dev
+          libboost-test-dev \
+          libboost-thread-dev \
+          make
 RUN     cd /usr/local/src &&\
           curl -O -L http://sourceforge.net/projects/fuego/files/fuego/1.1/fuego-1.1.tar.gz &&\
           tar zxf fuego-1.1.tar.gz
