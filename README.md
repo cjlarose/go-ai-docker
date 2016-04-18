@@ -2,9 +2,7 @@ Here is a collection Dockerfiles for use in building containers for Go AIs.
 Include links to source and consult licenses.
 
 Programs must support [GTP version 2][1], and must communicate over
-`stdin`/`stdout` as the `CMD` in the Dockerfile. Dockerfiles should use
-`cjlarose/baduk.io-base` as the base image. This is a barebones Debian Wheezy
-image with only `build-essential` and `curl` installed.
+`stdin`/`stdout` as the `CMD` in the Dockerfile.
 
 [1]: http://www.lysator.liu.se/~gunnar/gtp/
 
