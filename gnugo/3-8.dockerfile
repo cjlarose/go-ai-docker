@@ -1,8 +1,10 @@
 # Download source from http://ftp.gnu.org/gnu/gnugo/
 # License: GPLv3
-FROM    cjlarose/baduk.io-base
+FROM    alpine:3.3
 
-RUN     cd /usr/local/src &&\
+RUN     apk add --update curl make gcc musl-dev
+RUN     mkdir /usr/local/src &&\
+          cd /usr/local/src &&\
           curl -O http://ftp.gnu.org/gnu/gnugo/gnugo-3.8.tar.gz &&\
           tar zxf gnugo-3.8.tar.gz
 RUN     cd /usr/local/src/gnugo-3.8 &&\
