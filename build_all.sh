@@ -5,4 +5,5 @@ docker build -t gnugo:3.6 - < gnugo/3-6.dockerfile
 docker build -t gnugo:3.8 - < gnugo/3-8.dockerfile
 docker build -t indigo:2006 - < indigo/2006.dockerfile
 docker build -t pachi:10.00 - < pachi/10-00.dockerfile
+docker build -t pachi:11.00 - < pachi/11-00.dockerfile
 docker build -t simple_go:0.4.3 - < simple_go/0-4-3.dockerfile
