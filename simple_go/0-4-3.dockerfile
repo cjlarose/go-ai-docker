@@ -7,4 +7,4 @@ RUN     cd /usr/local/src &&\
           curl -O -L http://downloads.sourceforge.net/project/londerings/go/simple_go/simple_go_0_4_3_py.tar.bz2 &&\
           tar xf simple_go_0_4_3_py.tar.bz2
 
-CMD     python /usr/local/src/simple_go_0_4_3_py/play_gtp.py
+ENTRYPOINT ["python", "/usr/local/src/simple_go_0_4_3_py/play_gtp.py"]

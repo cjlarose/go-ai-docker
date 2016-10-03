@@ -11,4 +11,5 @@ RUN     cd /usr/local/src/gnugo-3.6 &&\
           ./configure &&\
           make install
 
-CMD     gnugo --mode gtp
+ENTRYPOINT ["/usr/local/bin/gnugo"]
+CMD        ["--mode", "gtp"]

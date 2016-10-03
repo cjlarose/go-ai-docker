@@ -12,4 +12,4 @@ RUN    cd /usr/local/src/disco-0.3 &&\
          shedskin -brew go.py &&\
          make
 
-CMD    python /usr/local/src/disco-0.3/disco.py
+ENTRYPOINT ["python", "/usr/local/src/disco-0.3/disco.py"]

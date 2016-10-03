@@ -10,4 +10,4 @@ RUN     cd /usr/local/src &&\
 RUN     cd /usr/local/src/pachi-pachi-11.00-retsugen-9f8c498 && make
 RUN     mv /usr/local/src/pachi-pachi-11.00-retsugen-9f8c498/pachi /usr/local/bin/pachi
 
-CMD     /usr/local/bin/pachi
+ENTRYPOINT ["/usr/local/bin/pachi"]

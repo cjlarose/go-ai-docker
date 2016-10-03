@@ -27,4 +27,4 @@ RUN     cd /usr/local/src/fuego-1.1 &&\
           make CXXFLAGS="-g -O2 -DNDEBUG -Wall -Wextra -fpermissive" &&\
           make install
 
-CMD     fuego
+ENTRYPOINT ["/usr/local/bin/fuego"]

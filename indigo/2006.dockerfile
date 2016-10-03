@@ -9,4 +9,5 @@ RUN      apt-get update &&\
 RUN      curl -o /usr/local/bin/indigo http://www.math-info.univ-paris5.fr/~bouzy/Indigo2006.19x19
 RUN      chmod +x /usr/local/bin/indigo
 
-CMD      /usr/local/bin/indigo -gtp
+ENTRYPOINT ["/usr/local/bin/indigo"]
+CMD        ["-gtp"]

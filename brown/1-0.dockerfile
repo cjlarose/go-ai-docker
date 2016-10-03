@@ -11,4 +11,4 @@ RUN    mkdir /usr/local/src &&\
 RUN    cd /usr/local/src/brown-1.0 && make
 RUN    mv /usr/local/src/brown-1.0/brown /usr/local/bin
 
-CMD    /usr/local/bin/brown
+ENTRYPOINT  ["/usr/local/bin/brown"]
