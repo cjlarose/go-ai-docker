@@ -3,7 +3,7 @@
 A collection Dockerfiles for use in building containers that run Go AIs.
 
 All programs support [GTP version 2][1], and communicate over `stdin`/`stdout`
-as the `CMD` in the Dockerfile.
+as the `ENTRYPOINT` in the Dockerfile.
 
 [1]: http://www.lysator.liu.se/~gunnar/gtp/
 
